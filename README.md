@@ -19,19 +19,19 @@ Role Variables
 
 The cache that holds the symdash code on the ansible server before deployment:
 
-cache_dir: cache
+    cache_dir: cache
 
 The repo that contains the actual symdash code:
 
-git_repo: git@github.rackspace.com:symetric/symdash.git
+    git_repo: git@github.rackspace.com:symetric/symdash.git
 
 Where the symdash code lives on the remote computer: 
 
-deploy_home: /etc/symdash
+    deploy_home: /etc/symdash
 
 The file used by the symdash app to control settings:
 
-config_file: config.py
+    config_file: config.py
 
 Dependencies
 ------------
@@ -47,10 +47,10 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-- hosts: erebor
-  gather_facts: false
-  roles:
-    - symdash 
+    - hosts: erebor
+      gather_facts: false
+      roles:
+        - symdash 
 
 License
 -------
