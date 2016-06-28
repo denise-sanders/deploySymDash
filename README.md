@@ -16,16 +16,16 @@ Must run as sudo
 Role Variables
 --------------
 
-# The cache that holds the symdash code on the ansible server before deployment
+### The cache that holds the symdash code on the ansible server before deployment
 cache_dir: cache
 
-# The repo that contains the actual symdash code
+### The repo that contains the actual symdash code
 git_repo: git@github.rackspace.com:symetric/symdash.git
 
-# where the symdash code lives on the remote computer 
+### where the symdash code lives on the remote computer 
 deploy_home: /etc/symdash
 
-# the file used by the symdash app to control settings
+### the file used by the symdash app to control settings
 config_file: config.py
 
 Dependencies
