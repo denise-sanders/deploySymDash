@@ -21,8 +21,9 @@
   with_items:
     - pg_hba.conf
     - postgresql.conf
+
 - name: copy over configs for postgres
-  copy: src={{item}} dest=/etc/postgresql/9.5/main/{{item}}.bak
+  copy: src={{item}} dest=/etc/postgresql/9.5/main/{{item}}
   with_items: 
     - pg_hba.conf
     - postgresql.conf
